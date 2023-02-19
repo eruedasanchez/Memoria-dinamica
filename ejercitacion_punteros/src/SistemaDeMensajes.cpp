@@ -10,16 +10,32 @@ SistemaDeMensajes::SistemaDeMensajes(){
 
 void SistemaDeMensajes::registrarJugador(int id, string ip){
     // Pre: 0 <= id < 4
+    if(_conns[id] != nullptr){
+        delete _conns[id];
+    } else {
+        ConexionJugador* jugador = new ConexionJugador(ip);
+        _conns[id] = jugador;
+
+    }
 }
 
-bool SistemaDeMensajes::registrado(int id) const{
-
+/* OBSERVACION: El "const" mas a la derecha indica que la funcion registrado durante su codigo
+ * no puede alterar la instancia de la clase Sistema de Mensajes */
+bool SistemaDeMensajes::registrado(int id) const {
+    // Pre: 0 <= id < 4
+    if (_conns[id] != nullptr) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 void SistemaDeMensajes::enviarMensaje(int id, string mensaje){
     // Pre: registrado(id)
+    _conns[id]->enviarMensaje(mensaje);
 }
 
-string SistemaDeMensajes::ipJugador(int id) const{
+string SistemaDeMensajes::ipJugador(int id) const {
     // Pre: registrado(id)
+    return _conns[id]->ip();
 }
