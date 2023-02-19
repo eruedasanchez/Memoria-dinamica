@@ -16,6 +16,7 @@ class SistemaDeMensajes {
   public:
     SistemaDeMensajes();
     // Pre: 0 <= id < 4
+
     void registrarJugador(int id, string ip);
     // Pre: 0 <= id < 4
     bool registrado(int id) const;
@@ -25,6 +26,9 @@ class SistemaDeMensajes {
 
     // Pre: registrado(id)
     string ipJugador(int id) const;
+
+    // Pre: registrado(id)
+    void desregistrarJugador(int id);
 
   private:
     ConexionJugador* _conns[4];
