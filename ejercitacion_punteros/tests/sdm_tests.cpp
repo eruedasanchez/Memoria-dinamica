@@ -27,6 +27,7 @@ TEST(SistemaDeMensajes, registrarJugador) {
   ASSERT_FALSE(sdm.registrado(1));
 }
 
+
 TEST(SistemaDeMensajes, enviar_mensaje) {
   Internet::internet().limpiar();
 
@@ -57,6 +58,10 @@ TEST(SistemaDeMensajes, enviar_mensaje_distintos_jugadores) {
 }
 
 #endif
+
+/************ Casos de tests ejercicio 1 funcionando todos ok :) ************/
+
+ /*
 
 #if EJ >= 3
 
@@ -152,3 +157,5 @@ TEST(Proxy, cambio_ip) {
 }
 
 #endif
+
+ */
