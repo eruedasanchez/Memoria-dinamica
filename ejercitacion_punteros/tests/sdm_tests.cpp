@@ -61,8 +61,6 @@ TEST(SistemaDeMensajes, enviar_mensaje_distintos_jugadores) {
 
 /************ Casos de tests ejercicio 1 funcionando todos ok :) ************/
 
- /*
-
 #if EJ >= 3
 
 TEST(SistemaDeMensajes, borrar_ip) {
@@ -112,6 +110,10 @@ TEST(SistemaDeMensajes, mensaje_cambio_ip) {
 }
 
 #endif
+
+/************ Casos de tests ejercicio 3 funcionando todos ok :) ************/
+
+/*
 
 #if EJ >= 4
 
