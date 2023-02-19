@@ -2,7 +2,11 @@
 
 /* Completar */
 
-SistemaDeMensajes::SistemaDeMensajes() {}
+SistemaDeMensajes::SistemaDeMensajes(){
+    for(int i = 0; i < 4; i++){
+        _conns[i] = nullptr;
+    }
+}
 
 void SistemaDeMensajes::registrarJugador(int id, string ip){
     // Pre: 0 <= id < 4
