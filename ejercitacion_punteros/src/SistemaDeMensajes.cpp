@@ -8,6 +8,14 @@ SistemaDeMensajes::SistemaDeMensajes(){
     }
 }
 
+/* Destructor de la clase */
+SistemaDeMensajes::~SistemaDeMensajes(){
+    for(int id = 0; id < 4; id++){
+        delete _proxys[id];
+    }
+
+}
+
 void SistemaDeMensajes::registrarJugador(int id, string ip){
     // Pre: 0 <= id < 4
     /* Codigo del punto 1
