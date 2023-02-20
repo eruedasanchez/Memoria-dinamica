@@ -1,4 +1,4 @@
-# Memoria-dinamica
+# Memoria dinamica
 
 Ejercicios resueltos. Clase 4. Algoritmos y Estructuras de Datos II. Universidad de Buenos Aires.
 
