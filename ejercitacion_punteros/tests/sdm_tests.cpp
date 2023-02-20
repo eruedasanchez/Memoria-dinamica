@@ -113,8 +113,6 @@ TEST(SistemaDeMensajes, mensaje_cambio_ip) {
 
 /************ Casos de tests ejercicio 3 funcionando todos ok :) ************/
 
-/*
-
 #if EJ >= 4
 
 TEST(Proxy, basico) {
@@ -132,6 +130,10 @@ TEST(Proxy, basico) {
 }
 
 #endif
+
+/************ Casos de tests ejercicio 4 y 5 funcionando todos ok :) ************/
+
+/*
 
 #if EJ >= 6
 
