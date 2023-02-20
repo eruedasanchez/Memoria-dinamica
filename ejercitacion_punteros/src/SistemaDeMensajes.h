@@ -17,6 +17,8 @@ class SistemaDeMensajes {
     SistemaDeMensajes();
     // Pre: 0 <= id < 4
 
+    ~SistemaDeMensajes(); // Destructor de la clase
+
     void registrarJugador(int id, string ip);
     // Pre: 0 <= id < 4
     bool registrado(int id) const;
@@ -34,6 +36,8 @@ class SistemaDeMensajes {
 
   private:
     ConexionJugador* _conns[4];
+
+    Proxy* _proxys[4];    // Vector donde se almacenan todos los proxys creados
 };
 
 #endif
