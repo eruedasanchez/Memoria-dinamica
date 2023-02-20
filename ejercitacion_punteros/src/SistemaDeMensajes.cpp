@@ -53,3 +53,8 @@ void SistemaDeMensajes::desregistrarJugador(int id) {
     // Pre: registrado(id)
     _conns[id] = nullptr;
 }
+
+Proxy* SistemaDeMensajes::obtenerProxy(int id){
+    Proxy* proxy_jugador = new Proxy(_conns[id]);
+    return proxy_jugador;
+}
