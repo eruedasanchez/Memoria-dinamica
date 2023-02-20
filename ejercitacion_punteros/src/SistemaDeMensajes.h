@@ -30,6 +30,8 @@ class SistemaDeMensajes {
     // Pre: registrado(id)
     void desregistrarJugador(int id);
 
+    Proxy* obtenerProxy(int id);
+
   private:
     ConexionJugador* _conns[4];
 };
